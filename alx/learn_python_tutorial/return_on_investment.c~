@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+
+#Determine return on investment for 10 years
+
+#input
+amt, interest = eval(input('Enter amount and interest separated by space'))
+for i in range(10):
+    amt_after = amt + amt * interest
+
+print(f'Current value of amt is {amt_after}')

@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+#Determine return on investment for 10 years
+
+#input
+amt, interest = input('Enter amount and interest separated by space: ').split()
+amt = float(amt)
+interest = float(interest) * .01
+print(amt)
+print(interest)
+for i in range(10):
+    amt = amt + (amt * interest)
+
+print(f'Current value of amt is {amt:.2f}')
